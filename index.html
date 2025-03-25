@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebDex</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="nav">
+      <img src="src/images/WebDex-logo.svg" class="logo" />
+    </div>
+    <section class="section-1">
+      <div id="pokemon-image-container" class="pokemon-image-container">
+        <p class="pokemon-image-placeholder">?</p>
+      </div>
+      <div class="pokemon-name-container">
+        <p id="pokemon-name" class="pokemon-name">...</p>
+      </div>
+      <div id="pokemon-type-container" class="pokemon-type-container">
+        <p id="pokemon-type" class="pokemon-type">Type</p>
+      </div>
+      <div class="pokemon-number-container">
+        <p id="pokemon-number" class="pokemon-number">#0</p>
+      </div>
+      <div class="about-container">
+        <h3 class="about-title">About:</h3>
+        <p id="about-text" class="about-text"></p>
+      </div>
+    </section>
+    <section class="section-2">
+      <div class="hp-container-index">
+        <p class="hp-text-index">HP</p>
+        <div class="hp-container">
+          <p id="hp-text" class="hp-text">100</p>
+        </div>
+      </div>
+      <div class="attack-container-index">
+        <p class="attack-text-index">ATT</p>
+        <div class="attack-container">
+          <p id="attack-text" class="attack-text">100</p>
+        </div>
+      </div>
+      <div class="defense-container-index">
+        <p class="defense-text-index">DEF</p>
+        <div class="defense-container">
+          <p id="defense-text" class="defense-text">100</p>
+        </div>
+      </div>
+      <div class="s-attack-container-index">
+        <p class="s-attack-text-index">S.ATT</p>
+        <div class="s-attack-container">
+          <p id="s-attack-text" class="s-attack-text">100</p>
+        </div>
+      </div>
+      <div class="s-defense-container-index">
+        <p class="s-defense-text-index">S.DEF</p>
+        <div class="s-defense-container">
+          <p id="s-defense-text" class="s-defense-text">100</p>
+        </div>
+      </div>
+      <div class="speed-container-index">
+        <p class="speed-text-index">SPED</p>
+        <div class="speed-container">
+          <p id="speed-text" class="speed-text">100</p>
+        </div>
+      </div>
+    </section>
+    <section class="section-3">
+      <div id="abilities-container" class="abilities-container">
+        <h3 class="abilities-title">Abilities:</h3>
+        <p id="abilities-text" class="abilities-text"></p>
+      </div>
+      <div id="weight-height-container" class="weight-height-container">
+        <h3 class="weight-title">Weight:</h3>
+        <p id="weight-text" class="weight-text">0</p>
+        <h3 class="height-title">Height:</h3>
+        <p id="height-text" class="height-text">0</p>
+      </div>
+      <div id="species-data-container" class="species-data-container">
+        <h3 class="capture-rate-title">Capture rate:</h3>
+        <p id="capture-rate-text" class="capture-rate-text">...</p>
+        <h3 class="egg-group-title">Egg group:</h3>
+        <p id="egg-group-text" class="egg-group-text">...</p>
+        <h3 class="growth-rate-title">Growth rate:</h3>
+        <p id="growth-rate-text" class="growth-rate-text">...</p>
+        <h3 class="generation-title">Generation:</h3>
+        <p id="generation-text" class="generation-text">...</p>
+      </div>
+      <h3 class="evolution-title">Evolution chain:</h3>
+      <div id="evolution-container" class="evolution-container"></div>
+      <p class="title-movement-list">List of movements:</p>
+      <div id="movements-container" class="movements-container"></div>
+    </section>
+    <section class="section-4">
+      <div class="button-selector">
+        <button type="text" class="pokemon-button">-Select a Pokemon-</button>
+        <button type="text" class="pokemon-button">-Select a Pokemon-</button>
+        <button type="text" class="pokemon-button">-Select a Pokemon-</button>
+        <button type="text" class="pokemon-button">-Select a Pokemon-</button>
+        <button type="text" class="pokemon-button">-Select a Pokemon-</button>
+        <button type="text" class="pokemon-button">-Select a Pokemon-</button>
+        <button type="text" class="pokemon-button">-Select a Pokemon-</button>
+        <button type="text" class="pokemon-button">-Select a Pokemon-</button>
+        <button type="text" class="pokemon-button">-Select a Pokemon-</button>
+        <button type="text" class="pokemon-button">-Select a Pokemon-</button>
+        <button type="text" class="pokemon-button">-Select a Pokemon-</button>
+        <button type="text" class="pokemon-button">-Select a Pokemon-</button>
+        <button type="text" class="pokemon-button">-Select a Pokemon-</button>
+      </div>
+      <input id="pokemon-input"" class="input-search" placeholder="Name or Number" />
+      <button id="search-button" class="search-button">Search</button>
+    </section>
+    <script src="src/script.js"></script>
+  </body>
+</html>
