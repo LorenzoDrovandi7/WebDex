@@ -71,10 +71,8 @@ function asignName(data) {
   const name = data.name.charAt(0).toUpperCase() + data.name.slice(1);
   pokemonName.textContent = name;
 
-  // Eliminar clases anteriores
   pokemonName.classList.remove("pokemon-name-extra-small", "pokemon-name-small");
 
-  // Aplicar la clase según la longitud del nombre
   if (name.length > 15) {
     pokemonName.classList.add("pokemon-name-extra-small");
   } else if (name.length > 10) {
@@ -220,7 +218,6 @@ async function asignEvolutions(data) {
   let currentEvolution = data.chain;
 
   if (!currentEvolution.evolves_to || currentEvolution.evolves_to.length === 0) {
-    // Si no hay evoluciones, mostramos un mensaje o simplemente no hacemos nada
     evolutionsContainer.innerHTML = "<p class=no-evolution-text>No evolutions available.</p>";
     return;
   }
