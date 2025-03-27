@@ -24,42 +24,45 @@ body {
 
 .section-1 {
   position: absolute;
-  width: 20%;
+  width: 62.3%;
   aspect-ratio: 574 / 1148;
   background-color: #d9d9d9;
   border: 0.26vw solid black;
-  margin-top: 7.5%;
-  margin-left: 2%;
+  margin-top: 8.5%;
+  margin-left: 1.5%;
 }
 
 .section-2 {
   position: absolute;
-  width: 9%;
+  width: 31.5%;
+  height: 46.2%;
   aspect-ratio: 574 / 2550;
   background-color: #d9d9d9;
   border: 0.26vw solid black;
-  margin-top: 7.5%;
-  margin-left: 23%;
+  margin-top: 8.5%;
+  margin-left: 66.5%;
 }
 
 .section-3 {
   position: absolute;
-  width: 42.5%;
+  width: 96.5%;
+  height: 70%;
   aspect-ratio: 574 / 540;
   background-color: #d9d9d9;
   border: 0.26vw solid black;
-  margin-top: 7.5%;
-  margin-left: 33%;
+  margin-top: 274%;
+  margin-left: 1.5%;
 }
 
 .section-4 {
   position: absolute;
-  width: 21%;
+  width: 96.5%;
+  height: 50%;
   aspect-ratio: 574 / 1092;
   background-color: #d9d9d9;
   border: 0.26vw solid black;
-  margin-top: 7.5%;
-  margin-left: 76.5%;
+  margin-top: 135.5%;
+  margin-left: 1.5%;
   margin-right: 2%;
 }
 
@@ -79,30 +82,29 @@ body {
   margin: 0;
   left: 35%;
   top: 10%;
-  font-size: 20vh;
+  font-size: 12vh;
 }
 
 .pokemon-name-container {
   position: absolute;
   left: 50%;
-  top: 38%;
+  top: 40%;
   width: 100%;
   text-align: center;
   transform: translateX(-50%);
 }
 
 .pokemon-name {
-  font-size: 6vh;
+  font-size: 3vh;
   margin-bottom: 0;
 }
 
 .pokemon-name-small {
-  font-size: 4vh;
+  font-size: 2vh;
   margin-top: 19%;
 }
-
 .pokemon-name-extra-small {
-  font-size: 3vh;
+  font-size: 1.8vh;
   margin-top: 18%;
 }
 
@@ -120,14 +122,14 @@ body {
 .pokemon-number-container {
   position: absolute;
   left: 50%;
-  top: 64%;
+  top: 63%;
   transform: translateX(-50%);
   border-radius: 10%;
 }
 
 .pokemon-number {
   margin: 1vh;
-  font-size: 3vh;
+  font-size: 2vh;
 }
 
 .hp-container-index,
@@ -156,28 +158,32 @@ body {
   height: 50%;
 }
 
+.hp-container-index,
+.attack-container-index,
+.defense-container-index,
+.s-attack-container-index,
+.s-defense-container-index,
+.speed-container-index {
+  left: 13%;
+}
+
 .hp-container-index {
-  left: 11%;
   top: 3%;
 }
 
 .attack-container-index {
-  left: 11%;
   top: 19%;
 }
 
 .defense-container-index {
-  left: 11%;
   top: 35%;
 }
 
 .s-attack-container-index {
-  left: 11%;
   top: 51%;
 }
 
 .s-defense-container-index {
-  left: 11%;
   top: 67%;
 }
 
@@ -193,6 +199,7 @@ body {
 .s-defense-container,
 .speed-container {
   right: 0%;
+  height: 51%;
   top: 47%;
 }
 
@@ -208,7 +215,7 @@ body {
 .s-defense-text,
 .speed-text-index,
 .speed-text {
-  font-size: 4.5vh;
+  font-size: 3vh;
   margin: 0;
   text-align: center;
 }
@@ -225,9 +232,9 @@ body {
 
 .abilities-title {
   position: absolute;
-  top: -19%;
+  top: -24%;
   left: 2%;
-  font-size: 2.5vh;
+  font-size: 2vh;
 }
 
 .about-container {
@@ -242,9 +249,9 @@ body {
 
 .about-title {
   position: absolute;
-  top: -8%;
-  left: 2%;
-  font-size: 2.5vh;
+  top: -15%;
+  left: 4%;
+  font-size: 2vh;
 }
 
 .button-selector {
@@ -263,10 +270,11 @@ body {
   font-size: 3vh;
   border: 0.26vw solid black;
   width: 100%;
-  height: 13.4%;
+  height: 14.5%;
   font-family: "Pixelify Sans", sans-serif;
   border-top: 0;
   border-left: 0;
+  border-right: 0;
   transition: background-color 0.3s ease;
 }
 
@@ -281,7 +289,7 @@ body {
 .input-search {
   position: absolute;
   top: 77%;
-  left: 4.3%;
+  left: 3%;
   background-color: white;
   font-size: 4vh;
   border: 0.26vw solid black;
@@ -296,7 +304,7 @@ body {
   top: 87%;
   left: 4.3%;
   background-color: rgb(255, 0, 0);
-  font-size: 5vh;
+  font-size: 4vh;
   border: 0.26vw solid black;
   width: 91.5%;
   height: 10%;
@@ -347,8 +355,8 @@ body {
 .pokemon-type-dragon,
 .pokemon-type-dark {
   margin: 1vh;
-  font-size: 4vh;
-  padding: 10px;
+  font-size: 2vh;
+  padding: 5px;
   border-radius: 10%;
 }
 
@@ -443,13 +451,13 @@ body {
 }
 
 .abilities-text {
-  font-size: 2.5vh;
-  margin-left: 4%;
-  margin-top: 7%;
+  margin-top: 15%;
+  font-size: 1.2vh;
+  margin-left: 7%;
 }
 
 .about-text {
-  font-size: 1.8vh;
+  font-size: 1vh;
   margin-left: 4%;
   margin-right: 4%;
   margin-top: 12%;
@@ -467,30 +475,30 @@ body {
 
 .weight-title {
   position: absolute;
-  top: -25%;
   left: 3%;
-  font-size: 2.5vh;
+  top: -5%;
+  font-size: 1.5vh;
 }
 
 .height-title {
   position: absolute;
-  top: 23%;
+  top: 33%;
   left: 3%;
-  font-size: 2.5vh;
+  font-size: 1.5vh;
 }
 
 .weight-text {
   position: absolute;
-  top: -25%;
-  left: 38%;
-  font-size: 2.5vh;
+  top: -5%;
+  left: 54%;
+  font-size: 1.5vh;
 }
 
 .height-text {
   position: absolute;
-  top: 23%;
-  left: 38%;
-  font-size: 2.5vh;
+  top: 33%;
+  left: 52%;
+  font-size: 1.5vh;
 }
 
 .species-data-container {
@@ -503,11 +511,23 @@ body {
   left: 2.5%;
 }
 
+.capture-rate-title,
+.egg-group-title,
+.growth-rate-title,
+.generation-title {
+  font-size: 1.5vh;
+}
+.capture-rate-text,
+.egg-group-text,
+.growth-rate-text,
+.generation-text {
+  font-size: 1.2vh;
+}
+
 .capture-rate-title {
   position: absolute;
   margin: 0;
   padding: 2%;
-  font-size: 2.5vh;
 }
 
 .capture-rate-text {
@@ -515,58 +535,52 @@ body {
   margin: 0;
   padding: 2%;
   left: 37%;
-  font-size: 2.5vh;
+  margin-left: 17%;
 }
 
 .egg-group-title {
   position: absolute;
   margin: 0;
-  margin-top: 7%;
+  margin-top: 16%;
   padding: 2%;
-  font-size: 2.5vh;
 }
 
 .egg-group-text {
   position: absolute;
   margin: 0;
-  margin-top: 7%;
+  margin-top: 17%;
   padding: 2%;
-  left: 28%;
-  font-size: 2.5vh;
+  left: 42%;
 }
 
 .growth-rate-title {
   position: absolute;
   margin: 0;
-  margin-top: 14%;
+  margin-top: 34%;
   padding: 2%;
-  font-size: 2.5vh;
 }
 
 .growth-rate-text {
   position: absolute;
   margin: 0;
-  margin-top: 14%;
+  margin-top: 34%;
   padding: 2%;
-  left: 36%;
-  font-size: 2.5vh;
+  left: 50%;
 }
 
 .generation-title {
   position: absolute;
   margin: 0;
-  margin-top: 21%;
+  margin-top: 51%;
   padding: 2%;
-  font-size: 2.5vh;
 }
 
 .generation-text {
   position: absolute;
   margin: 0;
-  margin-top: 21%;
+  margin-top: 51.5%;
   padding: 2%;
-  left: 33%;
-  font-size: 2.5vh;
+  left: 45%;
 }
 
 .movements-container {
@@ -590,7 +604,7 @@ body {
   height: 6%;
   background-color: rgb(255, 0, 0);
   border: 0.26vw solid black;
-  font-size: 4vh;
+  font-size: 3vh;
   text-align: center;
   z-index: 1;
 }
@@ -598,11 +612,11 @@ body {
 .movement-item {
   margin: 0;
   padding-top: 1%;
-  height: 11.5%;
+  height: 10%;
+  font-size: 1.5vh;
   color: rgb(0, 0, 0);
   border-bottom: 0.26vw solid black;
   border-right: 0.26vw solid black;
-  font-size: 3vh;
   text-align: center;
 }
 
@@ -627,10 +641,10 @@ body {
   left: 65%;
   top: 14%;
   margin: 0;
-  margin-top: 1%;
+  margin-top: 3%;
   padding: 2%;
-  font-size: 2.5vh;
-  z-index: 4;
+  font-size: 1.2vh;
+  z-index: 2;
 }
 
 .evolution-text {
@@ -658,205 +672,6 @@ body {
   text-align: center;
 }
 
-@media (min-width: 320px) and (max-width: 375px) {
-  .section-3 {
-    width: 96.5%;
-    height: 70%;
-    margin-top: 274%;
-    margin-left: 1.5%;
-  }
-  .section-1 {
-    width: 62.3%;
-    margin-top: 8.5%;
-    margin-left: 1.5%;
-  }
-  .section-4 {
-    width: 96.5%;
-    height: 50%;
-    margin-top: 135.5%;
-    margin-left: 1.5%;
-  }
-  .section-2 {
-    width: 31.5%;
-    height: 46.2%;
-    margin-top: 8.5%;
-    margin-left: 66.5%;
-  }
-  .pokemon-image-placeholder {
-    font-size: 12vh;
-  }
-  .pokemon-name-container {
-    top: 40%;
-  }
-  .pokemon-name {
-    font-size: 3vh;
-  }
-  .pokemon-number-container {
-    position: absolute;
-    left: 50%;
-    top: 63%;
-    transform: translateX(-50%);
-    border-radius: 10%;
-  }
-  .pokemon-type,
-  .pokemon-type-grass,
-  .pokemon-type-fire,
-  .pokemon-type-poison,
-  .pokemon-type-flying,
-  .pokemon-type-water,
-  .pokemon-type-bug,
-  .pokemon-type-normal,
-  .pokemon-type-electric,
-  .pokemon-type-ground,
-  .pokemon-type-fairy,
-  .pokemon-type-fighting,
-  .pokemon-type-psychic,
-  .pokemon-type-rock,
-  .pokemon-type-steel,
-  .pokemon-type-ice,
-  .pokemon-type-ghost,
-  .pokemon-type-dragon,
-  .pokemon-type-dark {
-    margin: 1vh;
-    font-size: 2vh;
-    padding: 5px;
-    border-radius: 10%;
-  }
-  .pokemon-number {
-    margin: 1vh;
-    font-size: 2vh;
-  }
-  .about-title {
-    position: absolute;
-    top: -15%;
-    left: 4%;
-    font-size: 2vh;
-  }
-  .about-text {
-    font-size: 1vh;
-  }
-  .hp-text-index,
-  .hp-text,
-  .attack-text-index,
-  .attack-text,
-  .defense-text-index,
-  .defense-text,
-  .s-attack-text-index,
-  .s-attack-text,
-  .s-defense-text-index,
-  .s-defense-text,
-  .speed-text-index,
-  .speed-text {
-    font-size: 3vh;
-  }
-  .hp-container,
-  .attack-container,
-  .defense-container,
-  .s-attack-container,
-  .s-defense-container,
-  .speed-container {
-    height: 51%;
-  }
-  .hp-container-index,
-  .attack-container-index,
-  .defense-container-index,
-  .s-attack-container-index,
-  .s-defense-container-index,
-  .speed-container-index {
-    left: 13%;
-  }
-  .pokemon-button {
-    font-size: 3vh;
-    width: 100%;
-    height: 14.5%;
-    border-right: 0;
-  }
-  .input-search {
-    font-size: 3vh;
-  }
-  .search-button {
-    font-size: 4vh;
-  }
-  .abilities-title {
-    font-size: 2vh;
-  }
-  .abilities-text {
-    margin-top: 14%;
-    font-size: 1vh;
-  }
-  .weight-title {
-    top: -5%;
-    font-size: 1.5vh;
-  }
-  .weight-text {
-    top: -5%;
-    left: 54%;
-    font-size: 1.5vh;
-  }
-  .height-title {
-    top: 33%;
-    left: 3%;
-    font-size: 1.5vh;
-  }
-  .height-text {
-    top: 33%;
-    left: 52%;
-    font-size: 1.5vh;
-  }
-  .capture-rate-title,
-  .egg-group-title,
-  .growth-rate-title,
-  .generation-title {
-    font-size: 1.5vh;
-  }
-  .egg-group-title {
-    margin-top: 10%;
-  }
-  .growth-rate-title {
-    margin-top: 21%;
-  }
-  .generation-title {
-    margin-top: 31%;
-  }
-  .capture-rate-text {
-    margin-left: 17%;
-    font-size: 1.5vh;
-  }
-  .egg-group-text {
-    font-size: 1.5vh;
-    margin-left: 14%;
-    margin-top: 10%;
-  }
-  .growth-rate-text {
-    margin-left: 15%;
-    margin-top: 21%;
-    font-size: 1.5vh;
-  }
-  .generation-text {
-    margin-left: 12%;
-    margin-top: 31%;
-    font-size: 1.5vh;
-  }
-  .evolution-title {
-    top: 15%;
-    font-size: 1.5vh;
-  }
-  .title-movement-list {
-    font-size: 3vh;
-  }
-  .movement-item {
-    height: 10%;
-    font-size: 1.5vh;
-  }
-  .pokemon-name-small {
-    font-size: 2vh;
-    margin-top: 19%;
-  }
-  .pokemon-name-extra-small {
-    font-size: 1.8vh;
-    margin-top: 18%;
-  }
-}
 @media (min-width: 375px) and (max-width: 425px) {
   .section-3 {
     width: 96.5%;
