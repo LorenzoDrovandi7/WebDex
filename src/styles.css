@@ -671,269 +671,13 @@ body {
   text-align: center;
 }
 
-@media (min-width: 375px) and (max-width: 425px) {
-  .section-3 {
-    margin-top: 253%;
-  }
-  .section-2 {
-    height: 54.1%;
-  }
-  .pokemon-image-placeholder {
-    top: 9%;
-    font-size: 14vh;
-  }
-  .about-text {
-    font-size: 1.2vh;
-  }
-  .egg-group-title {
-    margin-top: 14%;
-  }
-  .growth-rate-title {
-    margin-top: 29%;
-  }
-  .generation-title {
-    margin-top: 44%;
-  }
-  .capture-rate-text {
-    margin-left: 11%;
-  }
-  .egg-group-text {
-    font-size: 1.5vh;
-    left: 35%;
-    margin-top: 14%;
-  }
-  .growth-rate-text {
-    left: 42%;
-    margin-top: 30%;
-  }
-  .generation-text {
-    left: 39%;
-    margin-top: 44.5%;
-  }
-  .pokemon-name-small {
-    font-size: 2vh;
-    margin-top: 19%;
-  }
-  .pokemon-name-extra-small {
-    font-size: 1.8vh;
-    margin-top: 18%;
-  }
-}
-@media (min-width: 425px) and (max-width: 768px) {
-  .section-3 {
-    margin-top: 240%;
-  }
-  .section-2 {
-    height: 61.3%;
-  }
-  .section-2 p {
-    font-size: 3.5vh;
-  }
-  .pokemon-image-placeholder {
-    top: 8%;
-    font-size: 16vh;
-  }
-  .about-title {
-    top: -11%;
-  }
-  .about-text {
-    font-size: 1.4vh;
-  }
-  .abilities-text {
-    font-size: 1.4vh;
-    margin-top: 12%;
-  }
-  .egg-group-title {
-    margin-top: 12%;
-  }
-  .growth-rate-title {
-    margin-top: 26%;
-  }
-  .generation-title {
-    margin-top: 39%;
-  }
-  .capture-rate-text,
-  .egg-group-text,
-  .growth-rate-text,
-  .generation-text {
-    font-size: 1.5vh;
-  }
-  .capture-rate-text {
-    margin-left: 5%;
-  }
-  .egg-group-text {
-    left: 32%;
-    margin-top: 12%;
-  }
-  .growth-rate-text {
-    left: 42%;
-    margin-top: 26%;
-  }
-  .generation-text {
-    left: 39%;
-    margin-top: 39%;
-  }
-  .evolution-title {
-    top: 13%;
-    font-size: 1.6vh;
-  }
-  .pokemon-name-small {
-    font-size: 2vh;
-    margin-top: 19%;
-  }
-  .pokemon-name-extra-small {
-    font-size: 1.8vh;
-    margin-top: 18%;
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  .section-3 {
-    margin-top: 70%;
-  }
-  .section-1 {
-    width: 30%;
-  }
-  .section-4 {
-    width: 48%;
-    height: 53.3%;
-    margin-top: 8.5%;
-    margin-left: 49.5%;
-  }
-  .section-2 {
-    width: 15%;
-    height: 53.3%;
-    margin-left: 33%;
-  }
-  .pokemon-image-placeholder {
-    top: 9%;
-    font-size: 14vh;
-  }
-  .pokemon-name-container {
-    top: 41%;
-  }
-  .about-title {
-    top: -13%;
-  }
-  .about-text {
-    font-size: 1.19vh;
-  }
-  .input-search {
-    font-size: 3vh;
-    width: 90%;
-    left: 4%;
-  }
-  .abilities-text {
-    margin-top: 7%;
-    font-size: 1.5vh;
-  }
-  .weight-title {
-    top: -20%;
-    font-size: 2vh;
-  }
-  .weight-text {
-    top: -20%;
-    left: 34%;
-    font-size: 2vh;
-  }
-  .height-title {
-    top: 30%;
-    font-size: 2vh;
-  }
-  .height-text {
-    top: 30%;
-    left: 33%;
-    font-size: 2vh;
-  }
-  .capture-rate-title,
-  .egg-group-title,
-  .growth-rate-title,
-  .generation-title,
-  .egg-group-text,
-  .capture-rate-text,
-  .growth-rate-text,
-  .generation-text {
-    font-size: 2vh;
-  }
-  .egg-group-title {
-    margin-top: 5.5%;
-  }
-  .growth-rate-title {
-    margin-top: 12.5%;
-  }
-  .generation-title {
-    margin-top: 19%;
-  }
-  .capture-rate-text {
-    margin-left: -6%;
-  }
-  .egg-group-text {
-    margin-left: -10%;
-    margin-top: 5.5%;
-  }
-  .growth-rate-text {
-    margin-left: -14%;
-    margin-top: 12.5%;
-  }
-  .generation-text {
-    margin-left: -14%;
-    margin-top: 19%;
-  }
-  .evolution-title {
-    top: 11%;
-    font-size: 2vh;
-  }
-  .title-movement-list {
-    font-size: 3.5vh;
-  }
-  .movement-item {
-    font-size: 2.5vh;
-  }
-  .pokemon-name-small {
-    font-size: 2.5vh;
-    margin-top: 15%;
-  }
-  .pokemon-name-extra-small {
-    font-size: 2.2vh;
-    margin-top: 15%;
-  }
-}
-@media (min-width: 1024px) and (max-width: 1366px) {
-  .section-4 {
-    height: 71.1%;
-  }
-  .section-2 {
-    height: 71.1%;
-  }
+@media (max-width: 360px) and (max-width: 640px) {
   .pokemon-image-placeholder {
     font-size: 18vh;
+    top: 9%;
   }
-  .pokemon-name {
-    font-size: 4vh;
-  }
-  .pokemon-type,
-  .pokemon-type-grass,
-  .pokemon-type-fire,
-  .pokemon-type-poison,
-  .pokemon-type-flying,
-  .pokemon-type-water,
-  .pokemon-type-bug,
-  .pokemon-type-normal,
-  .pokemon-type-electric,
-  .pokemon-type-ground,
-  .pokemon-type-fairy,
-  .pokemon-type-fighting,
-  .pokemon-type-psychic,
-  .pokemon-type-rock,
-  .pokemon-type-steel,
-  .pokemon-type-ice,
-  .pokemon-type-ghost,
-  .pokemon-type-dragon,
-  .pokemon-type-dark {
-    font-size: 2.5vh;
-    padding: 10px;
-  }
-  .pokemon-number {
-    font-size: 3vh;
+  .pokemon-name-container {
+    top: 43%;
   }
   .about-title {
     top: -8%;
@@ -941,6 +685,9 @@ body {
   .about-text {
     font-size: 1.5vh;
   }
+  .section-2 {
+    height: 70%;
+  }
   .hp-text-index,
   .hp-text,
   .attack-text-index,
@@ -953,302 +700,60 @@ body {
   .s-defense-text,
   .speed-text-index,
   .speed-text {
-    font-size: 4vh;
-  }
-  .pokemon-button {
-    height: 11.2%;
-  }
-  .abilities-title {
-    font-size: 2vh;
-  }
-  .abilities-text {
-    margin-top: 5%;
-    font-size: 2vh;
-  }
-  .weight-title {
-    top: -18%;
-  }
-  .weight-text {
-    top: -18%;
-    left: 25%;
-  }
-  .height-title {
-    top: 33%;
-  }
-  .height-text {
-    top: 33%;
-    left: 25%;
-  }
-  .egg-group-title {
-    margin-top: 4%;
-  }
-  .growth-rate-title {
-    margin-top: 8%;
-  }
-  .generation-title {
-    margin-top: 12%;
-  }
-  .capture-rate-text {
-    left: 30%;
-  }
-  .egg-group-text {
-    left: 27%;
-    margin-top: 4%;
-  }
-  .growth-rate-text {
-    left: 36%;
-    margin-top: 8%;
-  }
-  .generation-text {
-    left: 34%;
-    margin-top: 12%;
-  }
-  .evolution-title {
-    top: 8.5%;
-    font-size: 3vh;
-  }
-  .title-movement-list {
     font-size: 3.5vh;
   }
-  .movement-item {
-    height: 10%;
-    font-size: 2.5vh;
-  }
-  .pokemon-name-small {
-    font-size: 2.5vh;
-    margin-top: 15%;
-  }
-  .pokemon-name-extra-small {
-    font-size: 2.2vh;
-    margin-top: 15%;
-  }
-}
-@media (min-width: 1366px) and (max-width: 1440px) {
   .section-3 {
-    width: 48.5%;
-    height: 84%;
-    margin-top: 8%;
-    margin-left: 33.5%;
-  }
-  .section-1 {
-    width: 20%;
-    height: 84%;
-    margin-top: 8%;
-    margin-left: 1.5%;
-  }
-  .section-4 {
-    width: 15%;
-    height: 84%;
-    margin-top: 8%;
-    margin-left: 83%;
-  }
-  .section-2 {
-    width: 10%;
-    height: 84%;
-    margin-top: 8%;
-    margin-left: 22.5%;
-  }
-  .pokemon-image-placeholder {
-    top: 7%;
-    font-size: 17vh;
-  }
-  .pokemon-name-container {
-    top: 33%;
-  }
-  .pokemon-name {
-    font-size: 4.5vh;
-  }
-  .pokemon-type-container {
-    top: 45%;
-  }
-  .pokemon-number-container {
-    position: absolute;
-    left: 50%;
-    top: 54%;
-    transform: translateX(-50%);
-    border-radius: 10%;
-  }
-  .pokemon-type,
-  .pokemon-type-grass,
-  .pokemon-type-fire,
-  .pokemon-type-poison,
-  .pokemon-type-flying,
-  .pokemon-type-water,
-  .pokemon-type-bug,
-  .pokemon-type-normal,
-  .pokemon-type-electric,
-  .pokemon-type-ground,
-  .pokemon-type-fairy,
-  .pokemon-type-fighting,
-  .pokemon-type-psychic,
-  .pokemon-type-rock,
-  .pokemon-type-steel,
-  .pokemon-type-ice,
-  .pokemon-type-ghost,
-  .pokemon-type-dragon,
-  .pokemon-type-dark {
-    margin: 1vh;
-    font-size: 3vh;
-    padding: 10px;
-    border-radius: 10%;
-  }
-  .pokemon-number {
-    margin: 1vh;
-    font-size: 3vh;
-  }
-  .about-container {
-    position: absolute;
-    border: 0.26vw solid black;
-    background-color: white;
-    width: 89%;
-    height: 35%;
-    top: 61%;
-    left: 5%;
-  }
-  .about-title {
-    position: absolute;
-    top: -10%;
-    left: 4%;
-    font-size: 3vh;
-  }
-  .about-text {
-    margin-top: 15%;
-    font-size: 2vh;
-  }
-  .hp-text-index,
-  .hp-text,
-  .attack-text-index,
-  .attack-text,
-  .defense-text-index,
-  .defense-text,
-  .s-attack-text-index,
-  .s-attack-text,
-  .s-defense-text-index,
-  .s-defense-text,
-  .speed-text-index,
-  .speed-text {
-    font-size: 4vh;
-  }
-  .hp-container,
-  .attack-container,
-  .defense-container,
-  .s-attack-container,
-  .s-defense-container,
-  .speed-container {
-    height: 51%;
-  }
-  .hp-container-index,
-  .attack-container-index,
-  .defense-container-index,
-  .s-attack-container-index,
-  .s-defense-container-index,
-  .speed-container-index {
-    left: 13%;
-  }
-  .pokemon-button {
-    font-size: 3vh;
-    width: 100%;
-    height: 10.1%;
-    border-right: 0;
-  }
-  .input-search {
-    font-size: 3vh;
-  }
-  .search-button {
-    font-size: 4vh;
-  }
-  .abilities-title {
-    font-size: 2.5vh;
+    margin-top: 228%;
   }
   .abilities-text {
-    margin-top: 9%;
-    font-size: 2vh;
+    font-size: 1.5vh;
+    margin-top: 11%;
   }
-  .weight-title {
-    top: -18%;
-    font-size: 2vh;
-  }
-  .weight-text {
-    top: -18%;
-    left: 35%;
-    font-size: 2vh;
-  }
-  .height-title {
-    top: 33%;
-    left: 3%;
-    font-size: 2vh;
-  }
+  .weight-title,
+  .weight-text,
+  .height-title,
   .height-text {
-    top: 33%;
-    left: 35%;
+    font-size: 2vh;
+  }
+  .weight-title,
+  .weight-text {
+    top: -25%;
+  }
+  .height-title,
+  .height-text {
+    top: 25%;
+  }
+  .capture-rate-title,
+  .capture-rate-text,
+  .egg-group-title,
+  .egg-group-text,
+  .growth-rate-title,
+  .growth-rate-text,
+  .generation-title,
+  .generation-text {
     font-size: 2vh;
   }
   .capture-rate-title,
-  .egg-group-title,
-  .growth-rate-title,
-  .generation-title {
-    font-size: 2.5vh;
-  }
-  .egg-group-title {
-    margin-top: 8%;
-  }
-  .growth-rate-title {
-    margin-top: 17%;
-  }
-  .generation-title {
-    margin-top: 25%;
-  }
   .capture-rate-text {
-    margin-left: 3%;
-    font-size: 2vh;
-    margin-top: 1%;
+    margin-top: 0%;
   }
+  .egg-group-title,
   .egg-group-text {
-    font-size: 2vh;
-    margin-left: 3%;
-    margin-top: 9%;
+    margin-top: 10%;
   }
+  .growth-rate-title,
   .growth-rate-text {
-    margin-left: 3%;
-    margin-top: 18%;
-    font-size: 2vh;
+    margin-top: 20%;
   }
+  .generation-title,
   .generation-text {
-    margin-left: 3%;
-    margin-top: 26%;
-    font-size: 2vh;
+    margin-top: 30%;
   }
   .evolution-title {
-    top: 14%;
-    font-size: 2vh;
-  }
-  .title-movement-list {
-    font-size: 4vh;
+    font-size: 1.8vh;
+    top: 13%;
   }
   .movement-item {
-    height: 10%;
-    font-size: 2.5vh;
-  }
-  .pokemon-name-small {
-    font-size: 2.5vh;
-    margin-top: 15%;
-  }
-  .pokemon-name-extra-small {
-    font-size: 2.2vh;
-    margin-top: 15%;
-  }
-}
-@media (min-width: 2560px) {
-  .section-1 {
-    height: 85%;
-  }
-  .pokemon-name-container {
-    top: 33%;
-  }
-  .pokemon-type-container {
-    top: 50%;
-  }
-  .pokemon-number-container {
-    top: 61%;
+    font-size: 2vh;
   }
 }
