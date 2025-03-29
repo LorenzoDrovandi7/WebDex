@@ -38,7 +38,7 @@ async function fetchPokemon(pokemon) {
     asignMoves(data);
     fetchPokemonSpecies(pokemon);
   } catch (error) {
-    pokemonImageContainer.innerHTML = `<p>${error.message}</p>`;
+    pokemonImageContainer.innerHTML = `<p id="error">${error.message}</p>`;
   }
 }
 
