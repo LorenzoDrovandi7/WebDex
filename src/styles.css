@@ -1837,3 +1837,111 @@ body {
     margin-top: 15%;
   }
 }
+@media (min-width: 1920px) and (max-height: 951px) {
+  .pokemon-image-placeholder {
+    font-size: 21vh;
+    top: 9%;
+  }
+  .pokemon-name-container {
+    top: 41.5%;
+  }
+  .pokemon-type-container {
+    top: 52%;
+  }
+  .pokemon-type,
+  .pokemon-type-grass,
+  .pokemon-type-fire,
+  .pokemon-type-poison,
+  .pokemon-type-flying,
+  .pokemon-type-water,
+  .pokemon-type-bug,
+  .pokemon-type-normal,
+  .pokemon-type-electric,
+  .pokemon-type-ground,
+  .pokemon-type-fairy,
+  .pokemon-type-fighting,
+  .pokemon-type-psychic,
+  .pokemon-type-rock,
+  .pokemon-type-steel,
+  .pokemon-type-ice,
+  .pokemon-type-ghost,
+  .pokemon-type-dragon,
+  .pokemon-type-dark {
+    font-size: 3vh;
+  }
+  .pokemon-number-container {
+    top: 60%;
+  }
+  .pokemon-number {
+    font-size: 3vh;
+  }
+  .about-container {
+    height: 29.5%;
+    left: 4.4%;
+    top: 67%;
+  }
+  .about-title {
+    font-size: 3vh;
+    top: -11%;
+  }
+  .hp-text-index,
+  .hp-text,
+  .attack-text-index,
+  .attack-text,
+  .defense-text-index,
+  .defense-text,
+  .s-attack-text-index,
+  .s-attack-text,
+  .s-defense-text-index,
+  .s-defense-text,
+  .speed-text-index,
+  .speed-text {
+    font-size: 4.5vh;
+  }
+  .abilities-text {
+    font-size: 2vh;
+    margin-top: 8%;
+  }
+  .capture-rate-title,
+  .capture-rate-text {
+    margin-top: -1%;
+  }
+  .egg-group-title,
+  .egg-group-text {
+    margin-top: 6.7%;
+  }
+  .growth-rate-title,
+  .growth-rate-text {
+    margin-top: 14.5%;
+  }
+  .generation-title,
+  .generation-text {
+    margin-top: 22%;
+  }
+  .evolution-title {
+    font-size: 2.5vh;
+    top: 11%;
+  }
+  .title-movement-list {
+    font-size: 4.5vh;
+  }
+  .movement-item {
+    font-size: 3vh;
+    height: 11.4%;
+  }
+  .pokemon-button {
+    height: 10.1%;
+    font-size: 2.4vh;
+  }
+  .input-search {
+    font-size: 3vh;
+  }
+  .pokemon-name-small {
+    font-size: 3vh;
+    margin-top: 15%;
+  }
+  .pokemon-name-extra-small {
+    font-size: 2.2vh;
+    margin-top: 15%;
+  }
+}

@@ -3,7 +3,6 @@ const searchButton = document.getElementById("search-button");
 const pokemonImageContainer = document.getElementById("pokemon-image-container");
 const pokemonTypeContainer = document.getElementById("pokemon-type-container");
 let pokemonName = document.getElementById("pokemon-name");
-let pokemonType = document.getElementById("pokemon-type");
 let pokemonNumber = document.getElementById("pokemon-number");
 let pokemonHp = document.getElementById("hp-text");
 let pokemonAttack = document.getElementById("attack-text");
@@ -54,7 +53,7 @@ async function fetchPokemonSpecies(pokemon) {
     const evolutionChainUrl = data.evolution_chain.url;
     fetchEvolutionChain(evolutionChainUrl);
   } catch (error) {
-    pokemonAbout.innerHTML += `<p>${error.message}</p>`;
+    pokemonImageContainer.innerHTML += `<p>${error.message}</p>`;
   }
 }
 

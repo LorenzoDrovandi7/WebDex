@@ -1,5 +1,9 @@
 {
   "devDependencies": {
-    "cypress": "^14.2.1"
+    "@eslint/js": "^9.23.0",
+    "cypress": "^14.2.1",
+    "eslint": "^9.23.0",
+    "eslint-plugin-cypress": "^4.2.0",
+    "globals": "^16.0.0"
   }
 }
