@@ -47,6 +47,8 @@ export default defineConfig([
     },
     rules: {
       "no-unused-vars": "off",
+      "import/no-unresolved": "off",
+      "no-undef": "off",
     },
   },
 ]);
