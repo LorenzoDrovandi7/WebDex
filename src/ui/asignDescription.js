@@ -1,6 +1,5 @@
-import { aboutText } from "/src/script.js";
-
 export function asignDescription(speciesData) {
+  const aboutText = document.getElementById("about-text");
   aboutText.innerHTML = "";
   const flavorTextEntry = speciesData.flavor_text_entries.find((entry) => entry.language.name === "en");
   let description = flavorTextEntry ? flavorTextEntry.flavor_text : "Description not available.";

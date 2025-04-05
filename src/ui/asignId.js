@@ -1,5 +1,8 @@
-import { pokemonNumber } from "/src/script.js";
-
 export function asignId(data) {
-  pokemonNumber.textContent = `#${data.id}`;
+  const pokemonNumber = document.getElementById("pokemon-number");
+  if (pokemonNumber) {
+    pokemonNumber.textContent = `#${data.id}`;
+  } else {
+    console.error("Elemento pokemonNumber no encontrado");
+  }
 }

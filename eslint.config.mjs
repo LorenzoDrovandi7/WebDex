@@ -2,6 +2,7 @@ import { defineConfig } from "eslint/config";
 import globals from "globals";
 import js from "@eslint/js";
 import cypressPlugin from "eslint-plugin-cypress";
+import jestPlugin from "eslint-plugin-jest"; // Importa el plugin de Jest
 
 export default defineConfig([
   {
@@ -17,6 +18,7 @@ export default defineConfig([
     },
   },
 
+  // Configuración para Cypress
   {
     files: ["cypress/**/*.{js,ts}"],
     plugins: {
@@ -34,6 +36,7 @@ export default defineConfig([
     },
   },
 
+  // Configuración para el archivo de configuración de Cypress
   {
     files: ["cypress.config.js"],
     languageOptions: {
@@ -49,6 +52,23 @@ export default defineConfig([
       "no-unused-vars": "off",
       "import/no-unresolved": "off",
       "no-undef": "off",
+    },
+  },
+
+  // Configuración para pruebas con Jest
+  {
+    files: ["**/*.{test,spec}.{js,mjs,cjs}"], // Archivos de prueba para Jest
+    plugins: {
+      jest: jestPlugin,
+    },
+    extends: ["plugin:jest/recommended"], // Reglas recomendadas de Jest
+    languageOptions: {
+      globals: {
+        ...globals.jest, // Incluye las globals de Jest como describe, test, expect
+      },
+    },
+    rules: {
+      // Aquí puedes agregar reglas personalizadas si lo necesitas
     },
   },
 ]);

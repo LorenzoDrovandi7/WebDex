@@ -1,4 +1,4 @@
-import { displayPokemonButtons } from "/src/ui/displayPokemonButtons.js";
+import { displayPokemonButtons } from "../ui/displayPokemonButtons.js";
 
 export async function loadPokemonList() {
   let storedList = localStorage.getItem("pokemonList");

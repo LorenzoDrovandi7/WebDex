@@ -1,5 +1,5 @@
-import { showPokemon } from "/src/ui/showPokemon.js";
-import { fetchPokemon } from "/src/api/fetchPokemon.js";
+import { showPokemon } from "../ui/showPokemon.js";
+import { fetchPokemon } from "../api/fetchPokemon.js";
 
 export function displayPokemonButtons(pokemonList) {
   const buttonContainer = document.querySelector(".button-selector");

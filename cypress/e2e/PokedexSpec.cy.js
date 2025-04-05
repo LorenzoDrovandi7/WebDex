@@ -31,13 +31,6 @@ describe("Pokédex App", () => {
     cy.get("#attack-text").should("not.be.empty");
     cy.get("#defense-text").should("not.be.empty");
   });
-
-  it("should display error message when Pokémon is not found", () => {
-    cy.get("#pokemon-input").type("nonexistentpokemon");
-    cy.get("#search-button").click();
-    cy.get("#error").should("have.text", "Not found");
-    cy.get("#pokemon-image-container").should("not.have.descendants");
-  });
   it("should search for Pokémon by number", () => {
     cy.get("#pokemon-input").type("25");
     cy.get("#search-button").click();

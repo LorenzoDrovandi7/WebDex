@@ -1,32 +1,33 @@
-import { fetchPokemonSprite } from "/src/api/fetchPokemonSprite.js";
-import { createEvolutionElement } from "/src/ui/createEvolutionElement.js";
+import { fetchPokemonSprite } from "../api/fetchPokemonSprite.js";
+import { createEvolutionElement } from "../ui/createEvolutionElement.js";
 
 export async function asignEvolutions(data) {
-  let evolutionsContainer = document.getElementById("evolution-container");
+  const evolutionsContainer = document.getElementById("evolution-container");
+  if (!evolutionsContainer) return;
+
   evolutionsContainer.innerHTML = "";
 
-  let currentEvolution = data.chain;
+  let queue = [{ species: data.chain.species, level: null, evolves_to: data.chain.evolves_to }];
 
-  if (!currentEvolution.evolves_to || currentEvolution.evolves_to.length === 0) {
-    evolutionsContainer.innerHTML = "<p class=no-evolution-text>No evolutions available.</p>";
+  if (!data.chain.evolves_to || data.chain.evolves_to.length === 0) {
+    evolutionsContainer.innerHTML = "<p class='no-evolution-text'>No evolutions available.</p>";
     return;
   }
 
-  const initialPokemonName = currentEvolution.species.name;
-  const initialPokemonSprite = await fetchPokemonSprite(initialPokemonName);
-  const initialPokemonElement = createEvolutionElement(initialPokemonName, initialPokemonSprite, null);
-  evolutionsContainer.appendChild(initialPokemonElement);
+  while (queue.length > 0) {
+    const { species, level, evolves_to } = queue.shift();
+    const sprite = (await fetchPokemonSprite(species.name)) || "https://example.com/default.png";
+    const element = createEvolutionElement(species.name, sprite, level);
+    evolutionsContainer.appendChild(element);
 
-  while (currentEvolution.evolves_to.length > 0) {
-    for (let evolution of currentEvolution.evolves_to) {
-      const evolutionName = evolution.species.name;
-      const evolutionLevel = evolution.evolution_details.length > 0 ? evolution.evolution_details[0].min_level : null;
+    if (!evolves_to || evolves_to.length === 0) continue;
 
-      const evolutionSprite = await fetchPokemonSprite(evolutionName);
-      const evolutionElement = createEvolutionElement(evolutionName, evolutionSprite, evolutionLevel);
-      evolutionsContainer.appendChild(evolutionElement);
-
-      currentEvolution = evolution;
-    }
+    evolves_to.forEach((evolution) => {
+      queue.push({
+        species: evolution.species,
+        level: evolution.evolution_details.length > 0 ? evolution.evolution_details[0].min_level : null,
+        evolves_to: evolution.evolves_to,
+      });
+    });
   }
 }

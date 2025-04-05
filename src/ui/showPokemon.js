@@ -1,17 +1,17 @@
-import { asignSprites } from "/src/ui/asignSprites.js";
-import { asignName } from "/src/ui/asignName.js";
-import { asignType } from "/src/ui/asignType.js";
-import { asignId } from "/src/ui/asignId.js";
-import { verifyTypesAmount } from "/src/ui/verifyTypesAmount.js";
-import { asignStats } from "/src/ui/asignStats.js";
-import { asignAbilities } from "/src/ui/asignAbilities.js";
-import { asignWeightHeight } from "/src/ui/asignWeightHeight.js";
-import { asignMoves } from "/src/ui/asignMoves.js";
-import { asignDescription } from "/src/ui/asignDescription.js";
-import { fetchPokemonSpecies } from "/src/api/fetchPokemonSpecies.js";
-import { asignSpeciesData } from "/src/ui/asignSpeciesData.js";
-import { fetchEvolutionChain } from "/src/api/fetchEvolutionChain.js";
-import { asignEvolutions } from "/src/ui/asignEvolutions.js";
+import { asignSprites } from "../ui/asignSprites.js";
+import { asignName } from "../ui/asignName.js";
+import { asignType } from "../ui/asignType.js";
+import { asignId } from "../ui/asignId.js";
+import { verifyTypesAmount } from "../ui/verifyTypesAmount.js";
+import { asignStats } from "../ui/asignStats.js";
+import { asignAbilities } from "../ui/asignAbilities.js";
+import { asignWeightHeight } from "../ui/asignWeightHeight.js";
+import { asignMoves } from "../ui/asignMoves.js";
+import { asignDescription } from "../ui/asignDescription.js";
+import { fetchPokemonSpecies } from "../api/fetchPokemonSpecies.js";
+import { asignSpeciesData } from "../ui/asignSpeciesData.js";
+import { fetchEvolutionChain } from "../api/fetchEvolutionChain.js";
+import { asignEvolutions } from "../ui/asignEvolutions.js";
 
 export async function showPokemon(data, pokemon) {
   asignSprites(data);

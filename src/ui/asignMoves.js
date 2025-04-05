@@ -1,5 +1,5 @@
-import { fetchMoveDetails } from "/src/api/fetchMoveDetails.js";
-import { createMoveElement } from "/src/ui/createMoveElement.js";
+import { fetchMoveDetails } from "../api/fetchMoveDetails.js";
+import { createMoveElement } from "../ui/createMoveElement.js";
 
 export function asignMoves(data) {
   const allMoves = data.moves;

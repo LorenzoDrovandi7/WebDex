@@ -1,4 +1,4 @@
-import { captureRateText, eggGroupText, growthRateText, generationText } from "/src/script.js";
+import { captureRateText, eggGroupText, growthRateText, generationText } from "../script.js";
 
 export function asignSpeciesData(data) {
   const captureRate = data.capture_rate;

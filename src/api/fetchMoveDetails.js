@@ -1,5 +1,13 @@
 export async function fetchMoveDetails(url) {
-  const response = await fetch(url);
-  const move = await response.json();
-  return move;
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error("Error");
+    }
+    const move = await response.json();
+    return move;
+  } catch (error) {
+    console.error(error.message);
+    throw error;
+  }
 }

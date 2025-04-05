@@ -1,4 +1,4 @@
-import { pokemonImageContainer } from "/src/script.js";
+import { pokemonImageContainer } from "../script.js";
 
 export function asignSprites(data) {
   const img = document.createElement("img");

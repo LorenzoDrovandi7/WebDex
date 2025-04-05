@@ -1,4 +1,4 @@
-import { pokemonName } from "/src/script.js";
+import { pokemonName } from "../script.js";
 
 export function asignName(data) {
   const name = data.name.charAt(0).toUpperCase() + data.name.slice(1);

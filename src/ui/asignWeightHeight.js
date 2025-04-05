@@ -1,4 +1,4 @@
-import { heightText, weightText } from "/src/script.js";
+import { heightText, weightText } from "../script.js";
 
 export function asignWeightHeight(data) {
   const height = data.height / 10;

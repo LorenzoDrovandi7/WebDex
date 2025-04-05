@@ -1,4 +1,4 @@
-import { pokemonTypeContainer } from "/src/script.js";
+import { pokemonTypeContainer } from "../script.js";
 
 export function asignType(data) {
   pokemonTypeContainer.innerHTML = "";

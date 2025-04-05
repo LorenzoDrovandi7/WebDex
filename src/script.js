@@ -25,16 +25,15 @@ export let generationText = document.getElementById("generation-text");
 
 document.addEventListener("DOMContentLoaded", () => {
   loadPokemonList();
-});
-
-searchButton.onclick = async function () {
-  const pokemon = pokemonInput.value.trim();
-  if (pokemon) {
-    try {
-      const data = await fetchPokemon(pokemon);
-      showPokemon(data, pokemon);
-    } catch (error) {
-      pokemonImageContainer.innerHTML = `<p id="error">${error.message}</p>`;
+  searchButton.onclick = async function () {
+    const pokemon = pokemonInput.value.trim();
+    if (pokemon) {
+      try {
+        const data = await fetchPokemon(pokemon);
+        showPokemon(data, pokemon);
+      } catch (error) {
+        pokemonImageContainer.innerHTML = `<p id="error">${error.message}</p>`;
+      }
     }
-  }
-};
+  };
+});

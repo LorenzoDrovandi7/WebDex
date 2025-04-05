@@ -5,7 +5,12 @@ export async function fetchPokemon(pokemonName) {
       throw new Error("Pokémon no encontrado");
     }
     return await response.json();
-  } catch (error) {
-    console.error(error);
+  } catch {
+    const pokemonImageContainer = document.getElementById("pokemon-image-container");
+    const errorMessage = document.createElement("p");
+    errorMessage.textContent = "Not found";
+    errorMessage.id = "error";
+    pokemonImageContainer.innerHTML = "";
+    pokemonImageContainer.appendChild(errorMessage);
   }
 }
