@@ -36,7 +36,7 @@ Open index.html in your browser or use a tool like Live Server to run the projec
 
 ## Technologies
 
-Demo link: [WebDex](https://vercel.com/lorenzodrovandi7s-projects/webdex)
+Demo link: [WebDex](https://webdex-kappa.vercel.app/)
 
 ## Credits
 
