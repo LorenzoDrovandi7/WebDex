@@ -2,6 +2,8 @@
 
 Webdex is a modern Pokédex built with HTML, CSS, JavaScript, and the [PokeAPI](https://pokeapi.co/). It allows users to search for Pokémon and view detailed information including stats, evolutions, capture rate, growth rate, egg group, generation, and more.
 
+![image](https://github.com/user-attachments/assets/2a2df75b-e786-47a1-93b4-5b75ce55b772)
+
 ## Features
 
 - Search Pokémon by name or ID
