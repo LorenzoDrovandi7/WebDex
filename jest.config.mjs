@@ -4,6 +4,7 @@ export default {
     "^.+\\.js$": "babel-jest",
   },
   moduleNameMapper: {
-    "^(\\.{1,2}/.*)\\.js$": "$1",
+    "^react-is$": "<rootDir>/node_modules/react-is/index.js",
+    "/\\.js$/": ".js",
   },
 };
