@@ -1,5 +1,5 @@
-import { fetchPokemonSprite } from "../api/fetchPokemonSprite.js";
 import { createEvolutionElement } from "../ui/createEvolutionElement.js";
+import { fetchPokemonSprite } from "../api/fetchPokemonSprite.js";
 
 export async function asignEvolutions(data) {
   const evolutionsContainer = document.getElementById("evolution-container");

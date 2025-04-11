@@ -1,7 +1,7 @@
 import { pokemonName } from "../script.js";
 
-export function asignName(data) {
-  const name = data.name.charAt(0).toUpperCase() + data.name.slice(1);
+export function asignName(pokemon) {
+  const name = pokemon.getFormattedName();
   pokemonName.textContent = name;
 
   pokemonName.classList.remove("pokemon-name-extra-small", "pokemon-name-small");

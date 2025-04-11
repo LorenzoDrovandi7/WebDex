@@ -1,15 +1,26 @@
-import { pokemonHp } from "../script.js";
-import { pokemonAttack } from "../script.js";
-import { pokemonDefense } from "../script.js";
-import { pokemonSAttack } from "../script.js";
-import { pokemonSDefense } from "../script.js";
-import { pokemonSpeed } from "../script.js";
+import { pokemonHp, pokemonAttack, pokemonDefense, pokemonSAttack, pokemonSDefense, pokemonSpeed } from "../script.js";
 
-export function asignStats(data) {
-  pokemonHp.innerHTML = `${data.stats[0].base_stat}`;
-  pokemonAttack.innerHTML = `${data.stats[1].base_stat}`;
-  pokemonDefense.innerHTML = `${data.stats[2].base_stat}`;
-  pokemonSAttack.innerHTML = `${data.stats[3].base_stat}`;
-  pokemonSDefense.innerHTML = `${data.stats[4].base_stat}`;
-  pokemonSpeed.innerHTML = `${data.stats[5].base_stat}`;
+export function asignStats(pokemon) {
+  pokemon.stats.forEach((stat) => {
+    switch (stat.name) {
+      case "hp":
+        pokemonHp.textContent = stat.value;
+        break;
+      case "attack":
+        pokemonAttack.textContent = stat.value;
+        break;
+      case "defense":
+        pokemonDefense.textContent = stat.value;
+        break;
+      case "special-attack":
+        pokemonSAttack.textContent = stat.value;
+        break;
+      case "special-defense":
+        pokemonSDefense.textContent = stat.value;
+        break;
+      case "speed":
+        pokemonSpeed.textContent = stat.value;
+        break;
+    }
+  });
 }

@@ -1,7 +1,6 @@
-export function asignAbilities(data) {
+export function asignAbilities(pokemon) {
   const abilitiesText = document.getElementById("abilities-text");
   if (!abilitiesText) return;
 
-  const abilities = data.abilities.map((ability) => ability.ability.name).join(", ");
-  abilitiesText.textContent = abilities;
+  abilitiesText.textContent = pokemon.getAbilitiesString();
 }

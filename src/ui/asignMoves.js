@@ -1,12 +1,17 @@
 import { fetchMoveDetails } from "../api/fetchMoveDetails.js";
 import { createMoveElement } from "../ui/createMoveElement.js";
 
-export function asignMoves(data) {
-  const allMoves = data.moves;
-  const eggMoves = allMoves.filter((move) =>
+export function asignMoves(pokemon) {
+  if (!pokemon.moves || !Array.isArray(pokemon.moves)) {
+    console.error("asignMoves failed.");
+    return;
+  }
+
+  const eggMoves = pokemon.moves.filter((move) =>
     move.version_group_details.some((detail) => detail.move_learn_method.name === "egg")
   );
-  const otherMoves = allMoves.filter((move) =>
+
+  const otherMoves = pokemon.moves.filter((move) =>
     move.version_group_details.every((detail) => detail.move_learn_method.name !== "egg")
   );
 
@@ -19,6 +24,7 @@ export function asignMoves(data) {
     moveElement.classList.add("movement-item");
     movementsContainer.appendChild(moveElement);
   });
+
   otherMoves.forEach(async (moveData) => {
     const move = await fetchMoveDetails(moveData.move.url);
     const moveElement = createMoveElement(move, "");

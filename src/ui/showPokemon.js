@@ -8,25 +8,20 @@ import { asignAbilities } from "../ui/asignAbilities.js";
 import { asignWeightHeight } from "../ui/asignWeightHeight.js";
 import { asignMoves } from "../ui/asignMoves.js";
 import { asignDescription } from "../ui/asignDescription.js";
-import { fetchPokemonSpecies } from "../api/fetchPokemonSpecies.js";
 import { asignSpeciesData } from "../ui/asignSpeciesData.js";
-import { fetchEvolutionChain } from "../api/fetchEvolutionChain.js";
 import { asignEvolutions } from "../ui/asignEvolutions.js";
 
-export async function showPokemon(data, pokemon) {
-  asignSprites(data);
-  asignName(data);
-  asignType(data);
-  asignId(data);
-  verifyTypesAmount(data);
-  asignStats(data);
-  asignAbilities(data);
-  asignWeightHeight(data);
-  asignMoves(data);
-  const dataSpecies = await fetchPokemonSpecies(pokemon);
-  asignDescription(dataSpecies);
-  asignSpeciesData(dataSpecies);
-  const evolutionChainUrl = dataSpecies.evolution_chain.url;
-  const dataEvolution = await fetchEvolutionChain(evolutionChainUrl);
-  asignEvolutions(dataEvolution);
+export async function showPokemon(pokemon) {
+  asignSprites(pokemon);
+  asignName(pokemon);
+  asignType(pokemon);
+  asignId(pokemon);
+  verifyTypesAmount(pokemon);
+  asignStats(pokemon);
+  asignAbilities(pokemon);
+  asignWeightHeight(pokemon);
+  asignMoves(pokemon);
+  asignDescription(pokemon);
+  asignSpeciesData(pokemon);
+  asignEvolutions(pokemon.evolutionChain);
 }
