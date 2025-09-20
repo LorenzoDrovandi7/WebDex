@@ -1,10 +1,10 @@
 import { fetchPokemon } from "../src/api/fetchPokemon.js";
 import { showPokemon } from "../src/ui/showPokemon.js";
 import { loadPokemonList } from "../src/ui/loadPokemonList.js";
-import { pokemon } from "../src/api/classPokemon.js";
 
 const pokemonInput = document.getElementById("pokemon-input");
 const searchButton = document.getElementById("search-button");
+
 export const pokemonImageContainer = document.getElementById("pokemon-image-container");
 export const pokemonTypeContainer = document.getElementById("pokemon-type-container");
 export let pokemonName = document.getElementById("pokemon-name");
@@ -30,10 +30,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const clickedPokemon = pokemonInput.value.trim();
     if (clickedPokemon) {
       try {
-        await fetchPokemon(clickedPokemon);
-        showPokemon(pokemon);
+        const pokeData = await fetchPokemon(clickedPokemon);
+        showPokemon(pokeData);
       } catch (error) {
         pokemonImageContainer.innerHTML = `<p id="error">${error.message}</p>`;
+        console.error(error);
       }
     }
   };
